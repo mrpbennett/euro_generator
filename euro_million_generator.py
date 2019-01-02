@@ -1,31 +1,20 @@
 import random
 
+winning_numbers = []
+
 '''generate 5 numbers from 1 to 50 and 2 Lucky Stars from 1 to 12'''
-num_1 = random.randint(1, 50)
-num_2 = random.randint(1, 50)
-num_3 = random.randint(1, 50)
-num_4 = random.randint(1, 50)
-num_5 = random.randint(1, 50)
-lucky_star_1 = random.randint(1, 12)
-lucky_star_2 = random.randint(1, 12)
+def generate_nums():
 
+    #  creates main lotto numbers
+    for num in range(5):
+        ball_numbers = random.randint(1, 50)
+        winning_numbers.append(ball_numbers)
+    
+    #  creates lucky star numbers
+    for stars in range(2):
+        lucky_star_nums = random.randint(1, 12)
+        winning_numbers.append(lucky_star_nums)
 
-'''empty list to store nums in'''
-winning_nums = []
+    print(f'Your winning numbers could be {winning_numbers}')
 
-
-'''euro num generator'''
-def euro_generator():
-    winning_nums.append(num_1)
-    winning_nums.append(num_2)
-    winning_nums.append(num_3)
-    winning_nums.append(num_4)
-    winning_nums.append(num_5)
-    winning_nums.append(lucky_star_1)
-    winning_nums.append(lucky_star_2)
-
-    print(f'Your winning numbers could be {winning_nums}')
-
-
-euro_generator()
-
+generate_nums()
