@@ -8,6 +8,8 @@ Using the random module `luckylotto.py` will generate 5 numbers between 1 & 50 v
 
 Your luckylotto numbers could be [24, 17, 21, 35, 33, 12, 6]
 
+---
+
 #### euro_mill_scraper.py
 
 The idea behind this file is to scrape the past winning euromillion numbers, store each one it it's own list. To then later compare the _luckylotto.py_ generated number to see if there are any regualr patterns.
@@ -19,6 +21,6 @@ The idea behind this file is to scrape the past winning euromillion numbers, sto
 - [ ] - compare luckylotto.py agaisnt the col of lists in the gsheet
 - [ ] - check for patterns to see if the generated number is similar in anyway to past numbers
 
-----
+---
 
-:moneybag::moneybag::moneybag::moneybag:
+:man_shrugging: :moneybag: :man_shrugging: :moneybag: :man_shrugging: :moneybag: :man_shrugging: :moneybag:
