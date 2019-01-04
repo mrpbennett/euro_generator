@@ -4,9 +4,24 @@ A simple 7 number generator to help pick winning lotto numbers. As the lucky dip
 
 #### luckylotto.py
 
-Using the random module `luckylotto.py` will generate 5 numbers between 1 & 50 via a for loop, it will then go on to use another for loop to create 2 numbers between 1 & 12 for the 2 needed lucky stars using `randint()`. Which then are both appended to a list to give the result as an example:
+LuckyLotto is a little program that allows you to generate a potential winning EuroMillions ticket. 
 
-Your luckylotto numbers could be [24, 17, 21, 35, 33, 12, 6]
+The program does two things:
+
+1. Allows the user to generate a tuple of previously drawn numbers and sorts it by most common numbers drawn. Enabling the user to see which numbers were drawn most frequently.
+
+2. Generate a LuckyDip using the `randint()` method from random and then compare that lucky dip to the previous winning numbers. Allowing the user to see if the generated number has numbers that are commonly drawn.
+
+an example output:
+
+```bash
+--- # ---
+Your luckylotto numbers could be [29, 11, 23, 2, 39, 7, 8]
+
+The numbers appear in previous winning numbers this many times:
+
+[(2, 15), (8, 15), (11, 14), (7, 10), (23, 7), (29, 4), (39, 3)]
+```
 
 ---
 
