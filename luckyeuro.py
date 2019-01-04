@@ -13,7 +13,7 @@ winning_numbers = []
 def user_choice():
     print('Please choose:')
     print('1: If you want to see popular numbers from previous results')
-    print('2: To generate a luckydip and compare popularity agaisnt previous winners')
+    print('2: To generate a EURO MILLION ticket and compare popularity agaisnt previous winners')
 
     user_choice = input()
 
@@ -27,10 +27,10 @@ def user_choice():
         print(ordered_pop_nums)
 
     elif user_choice == '2':
-        #  creates main lotto numbers appends to winning_numbers
-        for ball_numbers in range(5):
-            ball_numbers = random.randint(1, 50)
-            winning_numbers.append(ball_numbers)
+        #  creates main EURO numbers appends to winning_numbers
+        for euro_numbers in range(5):
+            euro_numbers = random.randint(1, 50)
+            winning_numbers.append(euro_numbers)
 
         #  creates lucky star numbers and appends to winning_numbers
         for lucky_star_nums in range(2):
@@ -48,7 +48,7 @@ def user_choice():
         winners_count = {n: counts.get(n, 0) for n in winning_numbers}
         ordered_winners_count = sorted(winners_count.items(), key=operator.itemgetter(1), reverse=True)
         print(ordered_winners_count)
-        
+
 
 user_choice()
 
