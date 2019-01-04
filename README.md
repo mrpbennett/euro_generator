@@ -32,9 +32,9 @@ The idea behind this file is to scrape the past winning euromillion numbers, sto
 ### TODO:
 
 - [ ] - scrape just the numbers and place in their own list
-- [ ] - export the generated lists into a google sheet
-- [ ] - compare luckylotto.py agaisnt the col of lists in the gsheet
-- [ ] - check for patterns to see if the generated number is similar in anyway to past numbers
+- [ ] - export the generated lists into a csv
+- [ ] - compare luckylotto.py agaisnt the col of lists in the csv
+- [ x ] - check for patterns to see if the generated number is similar in anyway to past numbers
 
 ---
 
