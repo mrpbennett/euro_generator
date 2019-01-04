@@ -6,6 +6,9 @@ from collections import Counter
 
 winning_numbers = []
 
+#  get user to choose whether they want to see popularity from previous results
+#  or generate their own number and compare against previous results.
+
 
 def user_choice():
     print('Please choose:')
@@ -50,5 +53,6 @@ def user_choice():
 user_choice()
 
 '''
+Just a list of previous winners in order so i can keep an eye on it.
 (1, 16), (2, 15), (3, 20), (4, 19), (5, 9), (6, 12), (7, 10), (8, 15), (9, 12), (10, 9), (11, 14), (12, 21), (13, 4), (14, 5), (15, 7), (16, 6), (17, 7), (18, 7), (19, 2), (20, 4), (21, 5), (22, 1), (23, 7), (24, 3), (25, 5), (26, 6), (27, 4), (28, 5), (29, 4), (30, 5), (31, 7), (32, 6), (33, 2), (34, 3), (35, 3), (36, 6), (37, 6), (38, 5), (39, 3), (40, 5), (41, 2), (42, 9), (43, 9), (44, 5), (45, 9), (46, 3), (47, 2), (48, 5), (49, 3), (50, 5)
 '''
