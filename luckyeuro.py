@@ -20,7 +20,7 @@ def user_choice():
     if user_choice == '1':
         #  generate and sorts previous_winners by the second element
         #  to show most popular numbers drawn
-        pop_nums = Counter(n for l in pw.previous_winners for n in l)
+        pop_nums = Counter(n for l in pw.previous_euro_winners for n in l)
         ordered_pop_nums = sorted(pop_nums.items(), key=operator.itemgetter(1), reverse=True)
 
         print('--- most popular numbers from previous results are ---')
@@ -44,7 +44,7 @@ def user_choice():
         print()
 
         #  flattens winning_numbers and counts how many times each number appears win previous_winners
-        counts = Counter(n for l in pw.previous_winners for n in l)
+        counts = Counter(n for l in pw.previous_euro_winners for n in l)
         winners_count = {n: counts.get(n, 0) for n in winning_numbers}
         ordered_winners_count = sorted(winners_count.items(), key=operator.itemgetter(1), reverse=True)
         print(ordered_winners_count)
