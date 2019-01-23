@@ -2,6 +2,10 @@ import random
 import operator
 import previous_winners as pw
 from collections import Counter
+from pyfiglet import Figlet
+
+f = Figlet(font='slant')
+print(f.renderText('Lucky Lotto'))
 
 winning_numbers = []
 
@@ -38,6 +42,5 @@ def luckylotto():
         ordered_winners_count = sorted(winners_count.items(), key=operator.itemgetter(1), reverse=True)
         print(ordered_winners_count)
 
+
 luckylotto()
-
-
